@@ -1,7 +1,7 @@
 import { UserInfo } from '../UserInfo/UserInfo';
 
 export const TodoInfo = ({ todo }) => {
-  const className = `'TodoInfo' + (todo.completed ? ' TodoInfo--completed' : '')`;
+  const className = `TodoInfo${todo.completed ? ' TodoInfo--completed' : ''}`;
 
   return (
     <article className={className}>
